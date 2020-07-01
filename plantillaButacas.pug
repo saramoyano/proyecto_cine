@@ -1,0 +1,20 @@
+div(class="modal" tabindex="-1" role="dialog")
+    div(class="modal-dialog")
+        div(class="modal-content")
+            div(class="modal-header")
+                h3(class="modal-title") Seleccionar butacas
+                button(type="button" class="close")
+                    span &times;
+            div(class="modal-body")
+                span(class="badge badge-primary") #{cine}
+                span(class="badge badge-secondary") #{sala}
+                span(class="badge badge-success") #{hora}
+                    - var butacasFila = butacas/filas;
+                    - var butaca = 0
+                    each fila in filas
+                        while butaca < butacasFila
+                            span(class="badge badge-primary")
+                            - butaca++;
+            div(class="modal-footer")
+                button(type="button" class="btn btn-primary") Confirmar
+                button(type="button" class="btn btn-secondary" data-dismiss="modal") Close

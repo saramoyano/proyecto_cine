@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entradas de cine</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="container">
+    <header>
+        <div class="container">
+            <div class="row header1">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="name">
+                            <p class="h1 text-white">Entradas</p>
+                            <p class="h3 text-white">Bienvenido al servicio de entradas de cine</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">&nbsp;</div>
+            <div class="col-8">
+                <form class="form-inline ">
+                    <input id="filtro" class="form-control form-control-sm mr-2 w-75 mt-4" type="text"
+                        placeholder="Search" aria-label="Search">
+                    <button id="btnBuscar" class="btn mt-4">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </button>
+                    <button id="btnBorrar" class="btn mt-4">
+                        <i class="fa fa-close"></i>
+                    </button>
+                    <label class="switch">
+                        <input type="checkbox" id="switch" onclick="mostrarAlerta()">
+                        <span class="slider round"></span>
+                     </label>
+
+                </form>
+            </div>
+            <div class="col">&nbsp;</div>
+        </div>
+    </div>
+
+
+    <section id="pases" class="row mt-4"></section>
+    <section id="butacas"></section>
+    <section id="alerta">
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Documentales</strong> 
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="plantillaPases.js"></script>
+    <script src="plantillaButacas.js"></script>
+    <script src="pases.js"></script>
+</body>
+
+</html>

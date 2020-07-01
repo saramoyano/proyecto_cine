@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "compila-pases": "pug -c -D -n plantillaPases -o public plantillaPases.pug",
+    "compila-butacas": "pug -c -D -n plantillaButacas -o public plantillaButacas.pug"
   },
   "keywords": [],
   "author": "",

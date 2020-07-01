@@ -1,0 +1,15 @@
+div(class="card-deck")
+    each pase in listaPases 
+        div(class="col-3" margin="50px")        
+            div(class="card border-primary")
+                img(class="card-img-top" height="250px")&attributes({"src":pase.poster})
+                div(class="card-header")     
+                -var vinculo = "https://www.youtube.com/results?search_query="+pase.titulo
+                    a(href=vinculo class="card-title") #{pase.titulo}
+                    p(class="card-text") #{pase.cine}
+                    p(class="card-text") #{pase.sala}
+                    div(class="row")
+                        each hora in pase.horas    
+                            button(type="button" class="btn btn-primary") #{hora}   
+    
+        
